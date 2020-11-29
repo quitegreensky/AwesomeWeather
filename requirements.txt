@@ -1,0 +1,3 @@
+kivy==2.0.0rc4
+https://github.com/kivymd/KivyMD/archive/2c4fd30.zip
+kivymd_extensions.akivymd==1.2.5

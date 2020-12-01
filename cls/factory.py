@@ -7,4 +7,3 @@ r("ClearButton", module="cls.button")
 r("SwipeCities", module="cls.swipecities")
 r("IconListItem", module="cls.button")
 r("MyToolbar", module="cls.toolbar")
-

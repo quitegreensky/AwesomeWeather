@@ -1,5 +1,5 @@
 import json
-from os import path, pardir
+from os import pardir, path
 
 
 class JsonTool:

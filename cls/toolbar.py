@@ -1,7 +1,7 @@
-from kivy.lang.builder import Builder
-from kivymd.uix.relativelayout import MDRelativeLayout
-from kivy.properties import StringProperty
 from kivy.event import EventDispatcher
+from kivy.lang.builder import Builder
+from kivy.properties import StringProperty
+from kivymd.uix.relativelayout import MDRelativeLayout
 
 Builder.load_string(
     """
@@ -24,9 +24,10 @@ Builder.load_string(
     """
 )
 
+
 class MyToolbar(MDRelativeLayout, EventDispatcher):
     icon = StringProperty()
-    text= StringProperty()
+    text = StringProperty()
 
     def __init__(self, **kw):
         super().__init__(**kw)

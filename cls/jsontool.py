@@ -1,9 +1,9 @@
 import json
-from os import path
+from os import path, pardir
 
 
 class JsonTool:
-    main_path = path.join(path.dirname(__file__), "..", "mycities.json")
+    main_path = path.join(path.dirname(__file__), pardir, "mycities.json")
 
     def new(self, js=None):
         if not js:

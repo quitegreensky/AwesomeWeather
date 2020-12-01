@@ -31,9 +31,7 @@ Builder.load_string(
                     title: "Weather"
                     md_bg_color: 0,0,0,0
                     anchor_title: "center"
-                    left_action_items: [\
-                        ("cog-outline", lambda x: app.show_screen("Setting"))\
-                        ]
+                    left_action_items: [("cog-outline", lambda x: app.show_screen("Setting"))]
                     right_action_items: [("dots-vertical", lambda x: None)]
 
                 WeatherUI:

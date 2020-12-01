@@ -26,20 +26,22 @@ Builder.load_string(
     MyLabel:
         text: root.city+ ", "+ root.country
         font_size: dp(30)
-        adaptive_height: True
+        size_hint_y: None
+        height: dp(30)
 
     MyLabel:
         text: root.condition
         myfont: "light"
         font_size: dp(20)
-        adaptive_height: True
+        size_hint_y: None
+        height: dp(30)
 
     MyLabel:
         text: "Temperature: "+ root.temp + u"\N{DEGREE SIGN}C"
         myfont: "light"
         font_size: dp(20)
-        adaptive_height: True
-
+        size_hint_y: None
+        height: dp(30)
 
 """
 )

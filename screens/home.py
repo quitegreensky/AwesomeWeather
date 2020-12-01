@@ -60,7 +60,7 @@ Builder.load_string(
             size_hint_y: None
             height: dp(50)
             ClearButton:
-                text: "My Cities"
+                text: "My Locations"
                 height: dp(50)
                 _no_ripple_effect: True
                 on_release: swipe.open()

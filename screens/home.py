@@ -31,8 +31,6 @@ Builder.load_string(
                     title: "Weather"
                     md_bg_color: 0,0,0,0
                     anchor_title: "center"
-                    _hard_shadow_a : 0
-                    _soft_shadow_a : 0
                     left_action_items: [("cog-outline", lambda x: app.show_screen("Setting"))]
                     right_action_items: [("dots-vertical", lambda x: None)]
 
@@ -40,9 +38,9 @@ Builder.load_string(
                     id: weather
 
                 BoxLayout:
-                    padding: dp(10)
+                    padding: dp(20)
                     orientation: "vertical"
-                    spacing: dp(5)
+                    spacing: dp(20)
 
                     canvas.before:
                         Color:
@@ -60,6 +58,7 @@ Builder.load_string(
                         text_color: 0.1,5,0.4,1
                         height: dp(60)
 
+                    BoxLayout:
 
         AKSwipeMenuTopContent:
             size_hint_y: None

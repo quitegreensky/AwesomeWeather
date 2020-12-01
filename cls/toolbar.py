@@ -7,7 +7,7 @@ Builder.load_string(
     """
 <MyToolbar>
     size_hint_y: None
-    height: dp(70)
+    height: dp(50)
 
     MDIconButton:
         id: but

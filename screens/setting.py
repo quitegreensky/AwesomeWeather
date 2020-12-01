@@ -40,12 +40,10 @@ Builder.load_string(
                 size: self.size
                 source: "assets/dark_bg.png"
 
-        MDToolbar:
-            title: "Settings"
-            md_bg_color: 0,0,0,0
-            left_action_items: [\
-                ("chevron-left", lambda x: app.show_screen("Home", "back"))\
-                    ]
+        MyToolbar:
+            text: "Settings"
+            icon: "chevron-left"
+            on_release: app.show_screen("Home")
 
         ScrollView:
             MyAddBox:

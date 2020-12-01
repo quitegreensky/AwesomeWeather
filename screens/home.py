@@ -27,20 +27,18 @@ Builder.load_string(
                 orientation: "vertical"
                 md_bg_color: weather._bg_color
 
-                MDToolbar:
-                    title: "Weather"
-                    md_bg_color: 0,0,0,0
-                    anchor_title: "center"
-                    left_action_items: [("cog-outline", lambda x: app.show_screen("Setting"))]
-                    right_action_items: [("dots-vertical", lambda x: None)]
+                MyToolbar:
+                    text: "Weather"
+                    icon: "cog-outline"
+                    on_release: app.show_screen("Setting")
 
                 WeatherUI:
                     id: weather
 
                 BoxLayout:
-                    padding: dp(20)
+                    padding: dp(10)
                     orientation: "vertical"
-                    spacing: dp(20)
+                    spacing: dp(5)
 
                     canvas.before:
                         Color:
@@ -57,8 +55,6 @@ Builder.load_string(
                         text: "More details"
                         text_color: 0.1,5,0.4,1
                         height: dp(60)
-
-                    BoxLayout:
 
         AKSwipeMenuTopContent:
             size_hint_y: None
